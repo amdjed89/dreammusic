@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = "$";
 /////////////////////////
 ////////////////////////
 
@@ -317,14 +317,14 @@ client.on('message', message => {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
-        .addField('play', 'لتشغيل اغنية')
+        .addField('p', '**لتشغيل اغنية**')
         .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .addField('disconnect', '**الخروج من رومك الصوتي**')
+        .addField('skip', '**تخطي الأغنية**')
+        .addField('pause', '**ايقاف الاغنية مؤقتا**')
+        .addField('resume', '**تكملة الاغنية**')
+        .addField('queue', '**اظهار قائمة التشغيل**')
+        .addField('np', '**اظهار الاغنية اللي انت مشغلها حاليا**')
         .setFooter('(general_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
